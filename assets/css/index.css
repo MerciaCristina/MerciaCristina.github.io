@@ -488,6 +488,9 @@ body#about {
 #about .header a {
   text-decoration: none;
 }
+#about .header a small {
+  color: #ffffff;
+}
 #about .header .header-pic {
   flex-basis: 200px;
   height: 200px;

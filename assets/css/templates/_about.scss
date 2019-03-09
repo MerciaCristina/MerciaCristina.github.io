@@ -26,6 +26,9 @@ body#about {
     }
     a{
       text-decoration:none;
+      small{
+        color: #ffffff;
+      }
     }
     .header-pic {
       flex-basis: 200px;
