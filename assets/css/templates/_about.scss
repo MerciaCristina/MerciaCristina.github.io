@@ -66,11 +66,20 @@ body#about {
       padding-bottom: 10px;
       border-bottom: 1px solid #708090;
       margin-bottom: 10px;
+      cursor: pointer;
 
       &+div{
         color: #708090;
-        margin-bottom: 40px;
       }
+    }
+    .slider {
+      overflow-y: hidden;
+      height: 50px;    
+      transition-property: height;
+      transition-duration: .5s;
+    }
+    .slider.closed {
+      height: 0;
     }
   }
 }

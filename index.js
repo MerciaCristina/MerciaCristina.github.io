@@ -1,3 +1,7 @@
+function trigger(id) {
+    document.getElementById(id).classList.toggle('closed');
+};
+
 // let sections = {
 //   0: document.querySelector(`#section`),
 //   1: document.querySelector(`#section-2`),

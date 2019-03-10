@@ -525,10 +525,19 @@ body#about {
   padding-bottom: 10px;
   border-bottom: 1px solid #708090;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 #about .body h3 + div {
   color: #708090;
-  margin-bottom: 40px;
+}
+#about .body .slider {
+  overflow-y: hidden;
+  height: 50px;
+  transition-property: height;
+  transition-duration: 0.5s;
+}
+#about .body .slider.closed {
+  height: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
