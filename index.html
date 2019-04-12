@@ -1,85 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sanatah's Lair</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="https://i.imgur.com/jmB5gl4.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <title>-</title>
 </head>
+
 <body id="about">
-    <div class="about-container my-5">
-        <div class="header">
-            <div class="header-pic mr-3"></div>
-            <div class="header-content mt-4 mb-3 mr-3">
-                <div class="header-about">
-                    <h2 class="mb-2">Mércia Oliveira</h2>
-                    <h3 class="mb-2">Sanatah/Yueest/Mercia</h3>
-                    <h4 class="mb-1 center-icon"><i class="material-icons md-18 mr-1">email</i>yueest@gmail.com</h4>
-                </div>
-                <div class="header-links">
-                    <a href="https://twitter.com/yueest" target="_blank"><h4 class="mb-1">yueest@twitter</h4></a>
-                </div>
-                <div class="header-navbar">
-                    <a href="https://yueeest.tumblr.com/" target="_blank">
-                        <small title="Art"><i class="material-icons">palette</i><div>Art</div></small>
-                    </a>
-                    <a href="https://sanatahplay.tumblr.com/games" target="_blank">
-                        <small title="Games"><i class="material-icons">play_arrow</i><div>Games</div></small>
-                    </a>
-                    <a href="https://github.com/MerciaOliveira" target="_blank">
-                        <small title="Code"><i class="material-icons">code</i><div>Code</div></small>
-                    </a>                    
-                    <!-- <a href="view/portfolio/portfolio.html" target="_self">
-                        <small title="Portfolio"><i class="material-icons">panorama</i><div>Portfolio</div></small>
-                    </a> -->
-                </div>
-            </div>    
+    <div class="about-container">
+        <div class="about-items">
+            <div class="avatar">
+            </div>
+            <div class="name">
+                Mércia Oliveira
+            </div>
         </div>
-        <div class="body p-5">
-            <div>
-                <h3 onclick="trigger('section')" class="mb-1 center-icon"><i class="material-icons mr-1">info</i>Who I am</h3>
-                <div id="section" class="slider closed">
-                    <div>
-                        I’m a curious person who likes to learn everything. I have a Twitter account, where I post WIPs and news in my native language. I’m still studying English so my grammar isn’t perfect yet. Feel free to correct me.
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h3 onclick="trigger('section-2')" class="mb-1 center-icon"><i class="material-icons mr-1">insert_drive_file</i>What I do</h3>
-                <div id="section-2" class="slider closed">
-                    Art, Games and Code
-                </div>
-            </div>
-            <div>
-                <h3 onclick="trigger('section-3')" class="mb-1 center-icon"><i class="material-icons mr-1">computer</i>What hardware I use</h3>
-                <div id="section-3" class="slider closed">
-                    Desktop, Wacom Digital Tablet
-                </div>
-            </div>
-            <div>
-                <h3 onclick="trigger('section-4')" class="mb-1 center-icon"><i class="material-icons mr-1">palette</i>What art software I use</h3>
-                <div id="section-4" class="slider closed">
-                    Paint[dot]net, Paint Tool SAI, Adobe Photoshop
-                </div>
-            </div>
-            <div>
-                <h3 onclick="trigger('section-5')" class="mb-1 center-icon"><i class="material-icons mr-1">play_arrow</i>What game software I use</h3>
-                <div id="section-5" class="slider closed">
-                    RPG Maker, Construct 2, Clickteam Fusion 2.5, Unity
-                </div>
-            </div>
-            <div>
-                <h3 onclick="trigger('section-6')" class="mb-1 center-icon"><i class="material-icons mr-1">code</i>What language I use</h3>
-                <div id="section-6" class="slider closed">
-                    C#, JavaScript
-                </div>
+        <div class="about-items">
+            <small class="info p-2">
+                I’m a curious person who likes to learn everything. I make Art, Code and Games. I have a Twitter
+                account, where I post WIPs and news in my native language.
+            </small>
+            <div class="icons-container p-2">
+                <a href="https://" target="_blank">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://" target="_blank">
+                    <i class="fab fa-tumblr fa-2x"></i>
+                </a>
+                <a href="https://" target="_blank">
+                    <i class="fab fa-itch-io fa-2x"></i>
+                </a>
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
+
 </html>
