@@ -1,3 +1,13 @@
+$about-bg: "/assets/img/about_bg.jpg";
+$about-img: "/assets/img/about_img.png";
+$about-img-size: 125px;
+
+@font-face {
+    font-family: "Muli";
+    src: url("/assets/fonts/Muli-Regular.ttf");
+    src: url("/assets/fonts/Muli-Regular.ttf") format("embedded-opentype"), url("/assets/fonts/Muli-Regular.ttf") format("ttf");
+}
+
 body#about{
     background-color: $gray;
     background-image: url($about-bg);
@@ -13,11 +23,6 @@ body#about{
     display: flex;
     justify-content: center;
     padding-top: 15vh;
-    @font-face {
-        font-family: "Muli";
-        src: url("/assets/fonts/Muli-Regular.ttf");
-        src: url("/assets/fonts/Muli-Regular.ttf") format("embedded-opentype"), url("/assets/fonts/Muli-Regular.ttf") format("ttf");
-    }
     .about-container{
         background: inherit;
         box-shadow: 2px 2px 3px 0px $black-alpha-md;

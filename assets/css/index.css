@@ -437,6 +437,11 @@
   margin-left: auto !important;
 }
 
+@font-face {
+  font-family: "Muli";
+  src: url("/assets/fonts/Muli-Regular.ttf");
+  src: url("/assets/fonts/Muli-Regular.ttf") format("embedded-opentype"), url("/assets/fonts/Muli-Regular.ttf") format("ttf");
+}
 body#about {
   background-color: #cccccc;
   background-image: url("/assets/img/about_bg.jpg");
@@ -453,13 +458,6 @@ body#about {
   display: flex;
   justify-content: center;
   padding-top: 15vh;
-}
-@font-face {
-  #about {
-    font-family: "Muli";
-    src: url("/assets/fonts/Muli-Regular.ttf");
-    src: url("/assets/fonts/Muli-Regular.ttf") format("embedded-opentype"), url("/assets/fonts/Muli-Regular.ttf") format("ttf");
-  }
 }
 #about .about-container {
   background: inherit;
