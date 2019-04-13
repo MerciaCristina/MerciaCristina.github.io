@@ -437,14 +437,9 @@
   margin-left: auto !important;
 }
 
-@font-face {
-  font-family: "Muli";
-  src: url("/assets/fonts/Muli-Regular.ttf");
-  src: url("/assets/fonts/Muli-Regular.ttf") format("embedded-opentype"), url("/assets/fonts/Muli-Regular.ttf") format("ttf");
-}
 body#about {
   background-color: #cccccc;
-  background-image: url("/assets/img/about-background.jpg");
+  background-image: url("/assets/img/about_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -458,6 +453,13 @@ body#about {
   display: flex;
   justify-content: center;
   padding-top: 15vh;
+}
+@font-face {
+  #about {
+    font-family: "Muli";
+    src: url("/assets/fonts/Muli-Regular.ttf");
+    src: url("/assets/fonts/Muli-Regular.ttf") format("embedded-opentype"), url("/assets/fonts/Muli-Regular.ttf") format("ttf");
+  }
 }
 #about .about-container {
   background: inherit;
@@ -481,7 +483,7 @@ body#about {
   height: 125px;
   width: 125px;
   background-size: 125px 125px;
-  background-image: url("/assets/img/chibi_sanatah.png");
+  background-image: url("/assets/img/about_img.png");
   border: 5px solid #f2f2f2;
   background-color: #ffffff8a;
   border-radius: 50%;
