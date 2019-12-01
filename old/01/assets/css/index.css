@@ -1,6 +1,7 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Rules for sizing the icon. */
@@ -462,7 +463,8 @@ body#about {
 }
 
 #about {
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
+  font-size: 0.8em;
 }
 #about .about-container {
   width: 900px;
@@ -507,9 +509,6 @@ body#about {
 }
 #about .header .header-content .header-about {
   flex-grow: 1;
-}
-#about .header .header-content .header-links {
-  flex-basis: 200px;
 }
 #about .header .header-content .header-navbar {
   text-align: center;

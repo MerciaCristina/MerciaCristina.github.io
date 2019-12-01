@@ -437,11 +437,6 @@
   margin-left: auto !important;
 }
 
-@font-face {
-  font-family: "Muli";
-  src: url("/assets/fonts/Muli-Regular.ttf");
-  src: url("/assets/fonts/Muli-Regular.ttf") format("embedded-opentype"), url("/assets/fonts/Muli-Regular.ttf") format("ttf");
-}
 body#about {
   background-color: #cccccc;
   background-image: url("/assets/img/about_bg.jpg");
@@ -488,14 +483,14 @@ body#about {
   box-shadow: 0px 0px 3px 0px #00000078;
 }
 #about .about-container .about-items .name {
-  font-family: "Muli", sans-serif;
+  font-family: sans-serif;
   color: #f2f2f2;
   font-size: 1.5em;
   text-shadow: 0 1px 3px #00000078;
 }
 #about .about-container .about-items .info {
   flex-grow: 2;
-  font-family: "Muli", sans-serif;
+  font-family: sans-serif;
   text-align: justify;
   color: #333333;
 }

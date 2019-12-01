@@ -3,7 +3,8 @@ body#about {
 }
 
 #about {
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
+  font-size: 0.8em;
   .about-container {
     width: 900px;
     height: auto;
@@ -46,11 +47,8 @@ body#about {
       .header-about {
         flex-grow: 1;
       }
-      .header-links {
-        flex-basis: 200px;
-      }
       .header-navbar {
-          text-align: center;
+        text-align: center;
         color: #ffffff;
         align-self: flex-end;
         flex-basis: 100%;
