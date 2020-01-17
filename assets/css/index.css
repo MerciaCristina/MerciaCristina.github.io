@@ -63,6 +63,38 @@ section:not(:first-of-type){
     padding-top: 50px;
 }
 
+section#home{
+    background-image: url("../img/home.jpg");
+    background: linear-gradient(120deg, rgba(46, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/home.jpg"), url("../img/home.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    overflow:hidden;
+}
+section#home {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+section#home .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section#home .content .title{
+    color: #f2f2f2;
+    font-weight: bolder;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0 1px 3px #00000078;
+}
+
 section#about {
     display:flex;
     flex-direction: row;
@@ -70,21 +102,14 @@ section#about {
     justify-content: center;
 }
 
-section#about .container{
+section#about .content{
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-section#about .container .content{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-section#about .container .content .img{
+section#about .content .img{
     width: 126px;
     height: 326px;
     background-size:cover; 126px 326px;
@@ -99,7 +124,7 @@ section#about .container .content .img{
     -ms-interpolation-mode: nearest-neighbor;
 }
 
-section#about .container .content .textbox{
+section#about .content .textbox{
     height: auto;
     width: auto;
     max-width: 40vw;
@@ -111,9 +136,10 @@ section#about .container .content .textbox{
     padding: 10px;
     color: #2c2f34;
     position: relative;
+    text-align: justify;
 }
 
-section#about .container .content .textbox::before{
+section#about .content .textbox::before{
     content:'';
     width: 20px;
     height: 20px;
@@ -124,4 +150,25 @@ section#about .container .content .textbox::before{
     transform: rotate(45deg);
     margin-top:10px;
     z-index: -1;
+}
+
+section#skills{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#skills .content{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section#skills .content canvas{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 600px;
 }

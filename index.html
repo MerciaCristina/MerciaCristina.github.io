@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/index.css">
 </head>
+
 <body>
     <header id="header">
         <ul>
@@ -28,19 +30,29 @@
         </ul>
     </header>
     <section id="home">
-        SEção
+        <div class="content">
+            <h1 class="title">
+                A Game Developer<br>
+                with<br>
+                Web Developer Powers
+            </h1>
+        </div>
     </section>
     <section id="about">
-        <div class="container">
-            <div class="content">
-                <div class="img" alt="about image"></div>
-                <div class="textbox">I’m a curious person who likes to learn everything. I make Art, Code and Games. I have a Twitter
-                    account too, where you can see some project WIPs and news. You can follow me on <b>Twitter</b>, <b>Github</b>, <b>Tumblr</b> and <b>Itch.io</b>!</div>
-            </div>
-        </divcla>
+        <div class="content">
+            <div class="img" alt="about image"></div>
+            <div class="textbox">I’m a curious person who likes to learn about everything. I love to create new
+                things specially game related. Everytime when I going to study about something I think how I can use
+                that for games. You can follow me on <b>Twitter</b>,
+                <b>Github</b>, <b>Tumblr</b> and <b>Itch.io</b> to know more about my creations!</div>
+        </div>
     </section>
     <section id="skills">
-        SEção
+        <div class="content">
+            <canvas id="codeSkills"></canvas>
+            <canvas id="toolSkills"></canvas>
+            <canvas id="artSkills"></canvas>
+        </div>
     </section>
     <section id="works">
         SEção
@@ -51,5 +63,8 @@
     <footer>footer</footer>
     <script src="./js/fixedHeader.js"></script>
     <script src="./js/animatedSections.js"></script>
+    <script src="/node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="./js/radarChart.js"></script>
 </body>
+
 </html>
