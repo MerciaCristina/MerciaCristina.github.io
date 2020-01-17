@@ -154,21 +154,20 @@ section#about .content .textbox::before{
 
 section#skills{
     display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-section#skills .content{
-    display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+section#skills .content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 section#skills .content canvas{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    max-width: 600px;
+    margin: 10px 0 20px 0;
+    max-width: 400px;
 }
