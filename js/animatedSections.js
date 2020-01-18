@@ -1,16 +1,16 @@
-const sections = {
-  0: document.querySelector(`#home`),
-  1: document.querySelector(`#about`),
-  2: document.querySelector(`#skills`),
-  3: document.querySelector(`#works`),
-  4: document.querySelector(`#contact`),
-};
+const sections = [
+  document.querySelector(`#home`),
+  document.querySelector(`#about`),
+  document.querySelector(`#skills`),
+  // document.querySelector(`#works`),
+  document.querySelector(`#contact`)
+];
 
 setTimeout(
-  window.addEventListener(`scroll`, function() {
-    for (section in sections) {
-        if (window.pageYOffset + (window.innerHeight * 3) / 3.5 > sections[section].offsetTop) sections[section].setAttribute(`style`, `opacity:1;transition-duration:1s`);
-        else sections[section].setAttribute(`style`, `opacity:0;transition-duration:1s`);
+  window.addEventListener(`scroll`, function () {
+    for (let section of sections) {
+      if (window.pageYOffset + (window.innerHeight * 3) / 3.5 > section.offsetTop) section.setAttribute(`style`, `opacity:1;transition-duration:1s`);
+      else section.setAttribute(`style`, `opacity:0;transition-duration:1s`);
     }
   }),
   500
