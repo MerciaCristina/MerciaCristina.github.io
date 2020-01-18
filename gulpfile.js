@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
 const cssmin = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
@@ -11,7 +10,7 @@ const styles = require('./styles');
 
 gulp.task('css', function (done) {
     gulp.src(styles)
-        .pipe(cssmin({ rebaseTo: 'dist/assets/css', compatibility: 'ie8' }))
+        .pipe(cssmin({ compatibility: 'ie8' }))
         .pipe(gulp.dest('dist/assets/css'))
         .pipe(browserSync.reload({
             stream: true
