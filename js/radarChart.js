@@ -64,6 +64,7 @@
                 },
             },
             legend:{
+                onClick: (e) => e.stopPropagation(),
                 position:'left',
                 labels:{
                     fontSize: 14,
@@ -168,6 +169,7 @@
                 },
             },
             legend:{
+                onClick: (e) => e.stopPropagation(),
                 position:'left',
                 labels:{
                     fontSize: 14,
@@ -267,6 +269,7 @@
                 },
             },
             legend:{
+                onClick: (e) => e.stopPropagation(),
                 position:'left',
                 labels:{
                     fontSize: 14,
@@ -376,6 +379,7 @@
                 },
             },
             legend:{
+                onClick: (e) => e.stopPropagation(),
                 position:'left',
                 labels:{
                     fontSize: 14,

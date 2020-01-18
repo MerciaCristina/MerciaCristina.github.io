@@ -169,7 +169,7 @@ section#skills .content{
 
 section#skills .content canvas{
     margin: 40px 0;
-    max-width: 550px;
+    max-width: 650px;
 }
 
 section#contact{
@@ -198,6 +198,15 @@ section#contact form input{
     box-shadow: none;
 }
 
+section#contact form textarea{
+    border:none;
+    background-image:none;
+    background:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 section#contact form button{
     padding: 0;
     border: none;
@@ -209,10 +218,15 @@ section#contact form button{
 
 section#contact form button[type=submit]{
     background-color: #2c2f34;
+    border: 2px solid #2c2f34;
     min-width: 100px;
     margin: 20px 0 0 10px;
     padding: 5px 0;
     align-self: flex-start;
+}
+
+section#contact form button[type=submit]:hover{
+    border: 2px solid #cccccc;
 }
 
 section#contact form label{
