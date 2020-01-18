@@ -112,8 +112,8 @@ section#about .content{
 section#about .content .img{
     width: 126px;
     height: 326px;
-    background-size:cover; 126px 326px;
     background-image: url("../img/about.png");
+    background-size: cover;
     background-repeat: no-repeat;
     image-rendering: optimizeSpeed;
     image-rendering: -moz-crisp-edges;
