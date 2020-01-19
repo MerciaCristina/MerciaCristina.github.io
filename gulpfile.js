@@ -45,9 +45,14 @@ gulp.task('fonts', function (done) {
     done();
 });
 
+gulp.task('icons', function() {
+    return gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
+        .pipe(gulp.dest('dist/assets/webfonts/'));
+});
+
 gulp.task('html', function (done) {
     gulp.src(['./index.html'])
-        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
         .pipe(gulp.dest('dist/'))
         .pipe(browserSync.reload({
             stream: true
@@ -55,7 +60,7 @@ gulp.task('html', function (done) {
     done();
 });
 
-gulp.task('build', gulp.parallel('css', 'js', 'image', 'fonts', 'html'), function (done) {
+gulp.task('build', gulp.parallel('css', 'js', 'image', 'fonts', 'icons', 'html'), function (done) {
     done();
 });
 

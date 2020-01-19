@@ -177,10 +177,24 @@ section#contact{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
-section#contact form{
+section#contact .content{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+section#contact a{
+    margin: 20px;
+}
+
+section#contact a i{
+    color: #f2f2f2;
+    width: 60px;
+}
+
+/* section#contact form{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -251,7 +265,7 @@ section#contact form #message{
 section#contact form .contact-header{
     display: flex;
     flex-direction: row;
-}
+} */
 
 #footer{
     background-color: #2c2f34;
