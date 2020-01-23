@@ -19,54 +19,54 @@
                 backgroundColor: '#FDB45C3a',
                 borderColor: '#FDB45C78',
                 pointBackgroundColor: '#FDB45C',
-                pointBorderColor:'#f2f2f2',
+                pointBorderColor: '#f2f2f2',
                 data: [70, 50, 20, 40]
             }]
         },
         options: {
             animation: {
                 duration: 500,
-                onProgress: function() {
-                    
-                    var chartInstance = this.chart,
-                    ctx = chartInstance.ctx;
+                //     onProgress: function() {
 
-                    ctx.textAlign = 'center';
-                    ctx.fillStyle = '#f2f2f2';
-                    ctx.fontFamily ='Catamaran';
+                //         var chartInstance = this.chart,
+                //         ctx = chartInstance.ctx;
 
-                    this.data.datasets.forEach(function (dataset, i) {
-                        var meta = chartInstance.controller.getDatasetMeta(i);
-                        meta.data.forEach(function (bar, index) {
-                            var data = dataset.data[index];                            
-                            ctx.fillText(data, bar._model.x, bar._model.y - 10);
-                        });
-                    });
-                    
-                },
-                onComplete: function() {
-                    
-                    var chartInstance = this.chart,
-                    ctx = chartInstance.ctx;
+                //         ctx.textAlign = 'center';
+                //         ctx.fillStyle = '#f2f2f2';
+                //         ctx.fontFamily ='Catamaran';
 
-                    ctx.textAlign = 'center';
-                    ctx.fillStyle = '#f2f2f2';
-                    ctx.fontFamily ='Catamaran';
+                //         this.data.datasets.forEach(function (dataset, i) {
+                //             var meta = chartInstance.controller.getDatasetMeta(i);
+                //             meta.data.forEach(function (bar, index) {
+                //                 var data = dataset.data[index];                            
+                //                 ctx.fillText(data, bar._model.x, bar._model.y - 10);
+                //             });
+                //         });
 
-                    this.data.datasets.forEach(function (dataset, i) {
-                        var meta = chartInstance.controller.getDatasetMeta(i);
-                        meta.data.forEach(function (bar, index) {
-                            var data = dataset.data[index];                            
-                            ctx.fillText(data, bar._model.x, bar._model.y - 10);
-                        });
-                    });
-                    
-                },
+                //     },
+                //     onComplete: function() {
+
+                //         var chartInstance = this.chart,
+                //         ctx = chartInstance.ctx;
+
+                //         ctx.textAlign = 'center';
+                //         ctx.fillStyle = '#f2f2f2';
+                //         ctx.fontFamily ='Catamaran';
+
+                //         this.data.datasets.forEach(function (dataset, i) {
+                //             var meta = chartInstance.controller.getDatasetMeta(i);
+                //             meta.data.forEach(function (bar, index) {
+                //                 var data = dataset.data[index];                            
+                //                 ctx.fillText(data, bar._model.x, bar._model.y - 10);
+                //             });
+                //         });
+
+                //     },
             },
-            legend:{
+            legend: {
                 onClick: (e) => e.stopPropagation(),
-                position:'bottom',
-                labels:{
+                position: 'bottom',
+                labels: {
                     fontSize: 14,
                     fontStyle: '600',
                     fontColor: '#f2f2f2',
@@ -76,7 +76,7 @@
             },
             responsive: true,
             tooltips: {
-                enabled:false,
+                enabled: false,
             },
             scale: {
                 pointLabels: {
@@ -124,54 +124,54 @@
                 backgroundColor: '#ff8e723a',
                 borderColor: '#ff8e7278',
                 pointBackgroundColor: '#ff8e72',
-                pointBorderColor:'#f2f2f2',
+                pointBorderColor: '#f2f2f2',
                 data: [70, 40, 90, 60, 50, 30, 50, 80, 70]
             }]
         },
         options: {
             animation: {
                 duration: 500,
-                onProgress: function() {
-                    
-                    var chartInstance = this.chart,
-                    ctx = chartInstance.ctx;
+                //     onProgress: function() {
 
-                    ctx.textAlign = 'center';
-                    ctx.fillStyle = '#f2f2f2';
-                    ctx.fontFamily ='Catamaran';
+                //         var chartInstance = this.chart,
+                //         ctx = chartInstance.ctx;
 
-                    this.data.datasets.forEach(function (dataset, i) {
-                        var meta = chartInstance.controller.getDatasetMeta(i);
-                        meta.data.forEach(function (bar, index) {
-                            var data = dataset.data[index];                            
-                            ctx.fillText(data, bar._model.x, bar._model.y - 10);
-                        });
-                    });
-                    
-                },
-                onComplete: function() {
-                    
-                    var chartInstance = this.chart,
-                    ctx = chartInstance.ctx;
+                //         ctx.textAlign = 'center';
+                //         ctx.fillStyle = '#f2f2f2';
+                //         ctx.fontFamily ='Catamaran';
 
-                    ctx.textAlign = 'center';
-                    ctx.fillStyle = '#f2f2f2';
-                    ctx.fontFamily ='Catamaran';
+                //         this.data.datasets.forEach(function (dataset, i) {
+                //             var meta = chartInstance.controller.getDatasetMeta(i);
+                //             meta.data.forEach(function (bar, index) {
+                //                 var data = dataset.data[index];                            
+                //                 ctx.fillText(data, bar._model.x, bar._model.y - 10);
+                //             });
+                //         });
 
-                    this.data.datasets.forEach(function (dataset, i) {
-                        var meta = chartInstance.controller.getDatasetMeta(i);
-                        meta.data.forEach(function (bar, index) {
-                            var data = dataset.data[index];                            
-                            ctx.fillText(data, bar._model.x, bar._model.y - 10);
-                        });
-                    });
-                    
-                },
+                //     },
+                //     onComplete: function() {
+
+                //         var chartInstance = this.chart,
+                //         ctx = chartInstance.ctx;
+
+                //         ctx.textAlign = 'center';
+                //         ctx.fillStyle = '#f2f2f2';
+                //         ctx.fontFamily ='Catamaran';
+
+                //         this.data.datasets.forEach(function (dataset, i) {
+                //             var meta = chartInstance.controller.getDatasetMeta(i);
+                //             meta.data.forEach(function (bar, index) {
+                //                 var data = dataset.data[index];                            
+                //                 ctx.fillText(data, bar._model.x, bar._model.y - 10);
+                //             });
+                //         });
+
+                //     },
             },
-            legend:{
+            legend: {
                 onClick: (e) => e.stopPropagation(),
-                position:'bottom',
-                labels:{
+                position: 'bottom',
+                labels: {
                     fontSize: 14,
                     fontStyle: '600',
                     fontColor: '#f2f2f2',
@@ -181,7 +181,7 @@
             },
             responsive: true,
             tooltips: {
-                enabled:false,
+                enabled: false,
             },
             scale: {
                 pointLabels: {
@@ -224,54 +224,54 @@
                 backgroundColor: '#ff63843a',
                 borderColor: '#ff638478',
                 pointBackgroundColor: '#ff6384',
-                pointBorderColor:'#f2f2f2',
+                pointBorderColor: '#f2f2f2',
                 data: [90, 70, 10, 60]
             }]
         },
         options: {
             animation: {
                 duration: 500,
-                onProgress: function() {
-                    
-                    var chartInstance = this.chart,
-                    ctx = chartInstance.ctx;
+                //     onProgress: function() {
 
-                    ctx.textAlign = 'center';
-                    ctx.fillStyle = '#f2f2f2';
-                    ctx.fontFamily ='Catamaran';
+                //         var chartInstance = this.chart,
+                //         ctx = chartInstance.ctx;
 
-                    this.data.datasets.forEach(function (dataset, i) {
-                        var meta = chartInstance.controller.getDatasetMeta(i);
-                        meta.data.forEach(function (bar, index) {
-                            var data = dataset.data[index];                            
-                            ctx.fillText(data, bar._model.x, bar._model.y - 10);
-                        });
-                    });
-                    
-                },
-                onComplete: function() {
-                    
-                    var chartInstance = this.chart,
-                    ctx = chartInstance.ctx;
+                //         ctx.textAlign = 'center';
+                //         ctx.fillStyle = '#f2f2f2';
+                //         ctx.fontFamily ='Catamaran';
 
-                    ctx.textAlign = 'center';
-                    ctx.fillStyle = '#f2f2f2';
-                    ctx.fontFamily ='Catamaran';
+                //         this.data.datasets.forEach(function (dataset, i) {
+                //             var meta = chartInstance.controller.getDatasetMeta(i);
+                //             meta.data.forEach(function (bar, index) {
+                //                 var data = dataset.data[index];                            
+                //                 ctx.fillText(data, bar._model.x, bar._model.y - 10);
+                //             });
+                //         });
 
-                    this.data.datasets.forEach(function (dataset, i) {
-                        var meta = chartInstance.controller.getDatasetMeta(i);
-                        meta.data.forEach(function (bar, index) {
-                            var data = dataset.data[index];                            
-                            ctx.fillText(data, bar._model.x, bar._model.y - 10);
-                        });
-                    });
-                    
-                },
+                //     },
+                //     onComplete: function() {
+
+                //         var chartInstance = this.chart,
+                //         ctx = chartInstance.ctx;
+
+                //         ctx.textAlign = 'center';
+                //         ctx.fillStyle = '#f2f2f2';
+                //         ctx.fontFamily ='Catamaran';
+
+                //         this.data.datasets.forEach(function (dataset, i) {
+                //             var meta = chartInstance.controller.getDatasetMeta(i);
+                //             meta.data.forEach(function (bar, index) {
+                //                 var data = dataset.data[index];                            
+                //                 ctx.fillText(data, bar._model.x, bar._model.y - 10);
+                //             });
+                //         });
+
+                //     },
             },
-            legend:{
+            legend: {
                 onClick: (e) => e.stopPropagation(),
-                position:'bottom',
-                labels:{
+                position: 'bottom',
+                labels: {
                     fontSize: 14,
                     fontStyle: '600',
                     fontColor: '#f2f2f2',
@@ -281,7 +281,7 @@
             },
             responsive: true,
             tooltips: {
-                enabled:false,
+                enabled: false,
             },
             scale: {
                 pointLabels: {
@@ -334,54 +334,54 @@
                 backgroundColor: '#46BFBD3a',
                 borderColor: '#46BFBD78',
                 pointBackgroundColor: '#46BFBD',
-                pointBorderColor:'#f2f2f2',
-                data: [30, 80, 80, 60, 70, 80, 10, 70, 40, 50, 50, 10, 30, 40]
+                pointBorderColor: '#f2f2f2',
+                data: [30, 80, 80, 60, 70, 80, 20, 70, 40, 50, 50, 10, 30, 40]
             }]
         },
         options: {
             animation: {
                 duration: 500,
-                onProgress: function() {
-                    
-                    var chartInstance = this.chart,
-                    ctx = chartInstance.ctx;
+                //     onProgress: function() {
 
-                    ctx.textAlign = 'center';
-                    ctx.fillStyle = '#f2f2f2';
-                    ctx.fontFamily ='Catamaran';
+                //         var chartInstance = this.chart,
+                //         ctx = chartInstance.ctx;
 
-                    this.data.datasets.forEach(function (dataset, i) {
-                        var meta = chartInstance.controller.getDatasetMeta(i);
-                        meta.data.forEach(function (bar, index) {
-                            var data = dataset.data[index];                            
-                            ctx.fillText(data, bar._model.x, bar._model.y - 10);
-                        });
-                    });
-                    
-                },
-                onComplete: function() {
-                    
-                    var chartInstance = this.chart,
-                    ctx = chartInstance.ctx;
+                //         ctx.textAlign = 'center';
+                //         ctx.fillStyle = '#f2f2f2';
+                //         ctx.fontFamily ='Catamaran';
 
-                    ctx.textAlign = 'center';
-                    ctx.fillStyle = '#f2f2f2';
-                    ctx.fontFamily ='Catamaran';
+                //         this.data.datasets.forEach(function (dataset, i) {
+                //             var meta = chartInstance.controller.getDatasetMeta(i);
+                //             meta.data.forEach(function (bar, index) {
+                //                 var data = dataset.data[index];                            
+                //                 ctx.fillText(data, bar._model.x, bar._model.y - 10);
+                //             });
+                //         });
 
-                    this.data.datasets.forEach(function (dataset, i) {
-                        var meta = chartInstance.controller.getDatasetMeta(i);
-                        meta.data.forEach(function (bar, index) {
-                            var data = dataset.data[index];                            
-                            ctx.fillText(data, bar._model.x, bar._model.y - 10);
-                        });
-                    });
-                    
-                },
+                //     },
+                //     onComplete: function() {
+
+                //         var chartInstance = this.chart,
+                //         ctx = chartInstance.ctx;
+
+                //         ctx.textAlign = 'center';
+                //         ctx.fillStyle = '#f2f2f2';
+                //         ctx.fontFamily ='Catamaran';
+
+                //         this.data.datasets.forEach(function (dataset, i) {
+                //             var meta = chartInstance.controller.getDatasetMeta(i);
+                //             meta.data.forEach(function (bar, index) {
+                //                 var data = dataset.data[index];                            
+                //                 ctx.fillText(data, bar._model.x, bar._model.y - 10);
+                //             });
+                //         });
+
+                //     },
             },
-            legend:{
+            legend: {
                 onClick: (e) => e.stopPropagation(),
-                position:'bottom',
-                labels:{
+                position: 'bottom',
+                labels: {
                     fontSize: 14,
                     fontStyle: '600',
                     fontColor: '#f2f2f2',
@@ -391,7 +391,7 @@
             },
             responsive: true,
             tooltips: {
-                enabled:false,
+                enabled: false,
             },
             scale: {
                 pointLabels: {
@@ -418,5 +418,5 @@
             }
         }
     })
-    
+
 })();

@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
 const cssmin = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
@@ -11,6 +12,7 @@ const styles = require('./styles');
 gulp.task('css', function (done) {
     gulp.src(styles)
         .pipe(cssmin({ compatibility: 'ie8' }))
+        .pipe(concat('index.css'))
         .pipe(gulp.dest('dist/assets/css'))
         .pipe(browserSync.reload({
             stream: true
@@ -22,6 +24,7 @@ gulp.task('js', function (done) {
     gulp.src(scripts)
         .pipe(uglify())
         .on('error', (err) => console.log(err))
+        .pipe(concat('index.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.reload({
             stream: true
@@ -45,7 +48,7 @@ gulp.task('fonts', function (done) {
     done();
 });
 
-gulp.task('icons', function() {
+gulp.task('icons', function () {
     return gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
         .pipe(gulp.dest('dist/assets/webfonts/'));
 });
