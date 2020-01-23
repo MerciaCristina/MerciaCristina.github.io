@@ -1,1 +1,0 @@
-function contact(e){e.preventDefault();const n=encodeURIComponent("merciacristina7@gmail.com"),o=encodeURIComponent(document.getElementById("subject").value),t=encodeURIComponent(document.getElementById("email").value),c=encodeURIComponent(document.getElementById("message").value);window.location.replace(`mailto:${n}?cc=${t}&subject=${o}&body=${c}`)}

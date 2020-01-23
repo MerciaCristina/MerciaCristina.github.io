@@ -1,1 +1,0 @@
-window.scrollTo(0,0);const header=document.getElementById("header"),fixed=header.offsetTop;function fixedHeader(){window.pageYOffset>fixed?header.classList.add("fixed-header"):header.classList.remove("fixed-header")}document.onscroll=function(){fixedHeader()};
