@@ -1,6 +1,6 @@
 [
-    "./assets/css/index.css",
-    "./node_modules/@fortawesome/fontawesome-free/css/all.css"
+    "./node_modules/@fortawesome/fontawesome-free/css/all.css",
+    "./assets/css/index.css"
 ]
 
 

@@ -37,6 +37,12 @@ header{
     text-transform: uppercase;
 }
 
+@media (max-width: 600px) {
+    header{
+        text-align: center;
+    }
+}
+
 header ul{
     white-space: nowrap;
     overflow-x: auto;
@@ -83,6 +89,7 @@ section#home .content{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 
@@ -93,6 +100,12 @@ section#home .content .title{
     font-weight: 900;
     text-align: center;
     text-shadow: 0 1px 3px #00000078;
+}
+
+@media (max-width: 600px) {
+    section#home .content h2{
+        text-align: center;
+    }
 }
 
 section#about {
@@ -107,6 +120,7 @@ section#about .content{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 section#about .content .img{
@@ -152,6 +166,16 @@ section#about .content .textbox::before{
     z-index: -1;
 }
 
+@media (max-width: 600px) {
+    section#about .content .textbox{
+        margin-top:0;
+    }
+    section#about .content .textbox::before{
+        margin-top:0;
+        top:45%;
+    }
+}
+
 section#skills{
     display:flex;
     flex-direction: row;
@@ -165,6 +189,7 @@ section#skills .content{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 section#skills .content canvas{
@@ -183,6 +208,13 @@ section#contact .content{
     display:flex;
     flex-direction: row;
     text-align: center;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    section#contact .content{
+        flex-direction: column;
+    }
 }
 
 section#contact a{

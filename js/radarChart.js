@@ -65,13 +65,13 @@
             },
             legend: {
                 onClick: (e) => e.stopPropagation(),
-                position: 'bottom',
+                position: 'top',
                 labels: {
-                    fontSize: 14,
+                    fontSize: 25,
                     fontStyle: '600',
                     fontColor: '#f2f2f2',
                     fontFamily: "'Catamaran', sans-serif",
-                    padding: 20,
+                    padding: 0,
                 }
             },
             responsive: true,
@@ -170,13 +170,13 @@
             },
             legend: {
                 onClick: (e) => e.stopPropagation(),
-                position: 'bottom',
+                position: 'top',
                 labels: {
-                    fontSize: 14,
+                    fontSize: 25,
                     fontStyle: '600',
                     fontColor: '#f2f2f2',
                     fontFamily: "'Catamaran', sans-serif",
-                    padding: 20,
+                    padding: 0,
                 }
             },
             responsive: true,
@@ -270,13 +270,13 @@
             },
             legend: {
                 onClick: (e) => e.stopPropagation(),
-                position: 'bottom',
+                position: 'top',
                 labels: {
-                    fontSize: 14,
+                    fontSize: 25,
                     fontStyle: '600',
                     fontColor: '#f2f2f2',
                     fontFamily: "'Catamaran', sans-serif",
-                    padding: 20,
+                    padding: 0,
                 }
             },
             responsive: true,
@@ -380,13 +380,13 @@
             },
             legend: {
                 onClick: (e) => e.stopPropagation(),
-                position: 'bottom',
+                position: 'top',
                 labels: {
-                    fontSize: 14,
+                    fontSize: 25,
                     fontStyle: '600',
                     fontColor: '#f2f2f2',
                     fontFamily: "'Catamaran', sans-serif",
-                    padding: 20,
+                    padding: 0,
                 }
             },
             responsive: true,
