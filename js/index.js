@@ -6,7 +6,7 @@ function clock() {
   min = currentDate.getMinutes();
   sec = currentDate.getSeconds();
 
-  formatedTime = hour + ":" + min + ":" + String( sec ).padStart( 2, '0' );
+  formatedTime = String( hour ).padStart( 2, '0' ) + ":" + String( min ).padStart( 2, '0' ) + ":" + String( sec ).padStart( 2, '0' );
 
   let timeTaskbar = document.querySelector( ".time" );
   timeTaskbar.textContent = formatedTime;
