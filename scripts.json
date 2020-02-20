@@ -1,7 +1,3 @@
 [
-    "./node_modules/chart.js/dist/Chart.js",
-    "./js/fixedHeader.js",
-    "./js/animatedSections.js",
-    "./js/emailTo.js",
-    "./js/radarChart.js"
+  "./js/index.js"
 ]
