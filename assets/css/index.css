@@ -8,7 +8,7 @@ html, body {
 .os-background{
   width: 100%;
   height: 100%;
-  background-image: url('/assets/img/bg.jpg');
+  background-image: url('../img/bg.jpg');
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
@@ -36,7 +36,7 @@ html, body {
 
 .os-background .profile-box::before{
   content:'';
-  background-image: url('/assets/img/bg.jpg');
+  background-image: url('../img/bg.jpg');
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment: fixed;
